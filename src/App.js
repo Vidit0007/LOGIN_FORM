@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import Login from "./Login";
+import Register from "./Register";
+import React, { useState } from "react";
+import Home from "./Home";
+import "./App.css";
 
 function App() {
+  const [loggedIn, setLoggedIn] = useState(false);
+  const [RegisteredIn, setRegisteredIn] = useState(false);
+
+  const handleLogin = () => {
+    setLoggedIn(true);
+  };
+  const handleLogout = () => {
+    setLoggedIn(false);
+  };
+  const handleRegister = () => {
+    setRegisteredIn(true);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+      {RegisteredIn ? (
+        <div>
+          <Login onLogin={handleLogin} />
+        </div>
+      ) : (
+        <div>
+          <Register onRegister={handleRegister} />
+        </div>
+      )}
+      {loggedIn && (<div><Home /><button className="btn2" onClick={handleLogout}>Logout</button></div>)}</div>
+  
   );
 }
 

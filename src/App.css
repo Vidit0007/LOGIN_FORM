@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+.input {
+  margin-left: 40%;
+  width: 20%;
+  height: 25px;
+  /* border-radius: 15px; */
+  padding-left: 30px;
+  font-family: monospace;
+  border: 2px solid black;
 }
+.btn1 {
+  border: 2px solid white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #2980B9;
+  color: white;
+  padding: 7px;
+  margin-left: 48%;
+  width: 90px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  /* border-radius: 15px; */
 }
+.heading {
+  margin-left: 45%;
+  font-size: 5em;
+  font-family: sans-serif;
+  color: white;
+  
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.heading2 {
+  margin-left: 42%;
+  font-size: 5em;
+  font-family: sans-serif;
   color: white;
 }
+.heading3 {
+  margin-left: 45%;
+  font-size: 5em;
+  font-family: sans-serif;
+  color: white;
 
-.App-link {
-  color: #61dafb;
 }
+.container1{
+  background-image: url("./images/login2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vd;
+  height: 100vh;
+}
+.container2{
+  background-image: url("./images/register.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vd;
+  height: 100vh;
+}
+.container3{
+  background-image: url("./images/home.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vd;
+  height: 100vh;
+}
+.btn2 {
+  border: 2px solid white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #2980B9;
+  color: white;
+  padding: 7px;
+  margin-left: 48%;
+  width: 90px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  /* border-radius: 15px; */
 }
